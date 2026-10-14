@@ -2,7 +2,7 @@
 <html lang="en">
     <head>
         <title>college tech event website</title>
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
     </head>
     <body>
         <h1>College Tech Event</h1>
@@ -10,13 +10,13 @@
         <h2>list of events </h2>
         <ol>
             <li>
-                <a href="event1.html">Event 1-2 hour hackathon</a>
+                <a href="{{ url_for('event1') }}">Event 1-2 hour hackathon</a>
             </li>
             <li>
-                <a href="event2.html">Event 2-1 hour workshop</a>
+                <a href="{{ url_for('event2') }}">Event 2-1 hour workshop</a>
             </li>
             <li>
-                <a href="event3.html">Event 3-3 hour coding competition</a>
+                <a href="{{ url_for('event3') }}">Event 3-3 hour coding competition</a>
             </li>
         </ol>
     </body>
